@@ -7,7 +7,7 @@ export class Counter extends Component {
 
         this.state ={
             count:0,
-            colour:'black'
+            
         }
     }
     increment() {
@@ -36,7 +36,7 @@ export class Counter extends Component {
         return (
             <div>
             <div style={{fontSize:'30px'}}>    COUNTER  </div>
-            <div style={{fontSize:'90px',color:this.state.colour}}>{this.state.count}</div>
+            <div style={{fontSize:'90px'}>{this.state.count}</div>
             <button onClick={() => this.increment()}>Increment</button>
             <button onClick={() => this.reset() }>Reset</button>
             <button onClick={() => this.decrement()}>Decrement</button>
